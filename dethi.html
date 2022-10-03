@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+    let arr =[]
+    let n=prompt("nhập số phần tử trong mảng")
+    for(let i=0;i<n;i++){
+        let text=+prompt("nhập điểm thi")
+        arr.push(text)
+    }
+    let sum=0
+    for (let i=0;i< arr.length;i++) {
+        sum+=arr[i];
+    }
+    let findAgv=sum/arr.length
+    document.write("kết quả điểm trung bình bài 1 là:"+ findAgv+"<br>")
+</script>
 </html>

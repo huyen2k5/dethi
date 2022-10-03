@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+  let arr = [];
+  let n= +prompt("nhập số lượng phần tử trong mảng");
+  let x = +prompt("nhập số nguyên X");
+  for (let i= 0; i< n;i++) {
+      let txt  = +prompt("nhập số nguyên phần tử trong mảng");
+      arr.push(txt);
+  }
+  let index = +prompt("nhập số nguyên vị trí index");
+   insertNumberToArray(arr,index,n,x)
+       function insertNumberToArray(arr,index,n,x) {
+           if (index < arr.legth || index >= 0) {
+               for (let i = 0; i <arr.legth; i++) {
+                   if (i === index) {
+                       arr[i] = x;
+
+                   }
+               }
+               document.write("mảng sau khi chèn số x và vị trí của index:" + arr.join(","));
+           } else {
+               document.write(arr.join("'"));
+           }
+       }
+</script>
 </html>
